@@ -24,7 +24,7 @@ const char* tokens[] = {"EOF", "LEFT_CURL", "RIGHT_CURL", "LEFT_SQUARE", "RIGHT_
 "null"		    { return TNULL; }
 [ \t\r\n]+	    { }
 \"([^\"]*)\"	    { return STRING; }
-^\[0-9]+\.?\[0-9]*  { return DECIMAL; }
+[0-9]+ { return DECIMAL; }
 .		    { return ERROR; }
 %%
 
