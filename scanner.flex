@@ -13,19 +13,19 @@ const char* tokens[] = {"EOF", "LEFT_CURL", "RIGHT_CURL", "LEFT_SQUARE", "RIGHT_
 %%
 
 <<EOF>>             { return TOKEN_EOF; }
-"{"					{ return LCURL; }
-"}"					{ return RCURL; }
-"["					{ return LSQUARE; }
-"]"					{ return RSQUARE; }
-","					{ return COMMA; }
-":"					{ return COLON; }
-"true"				{ return TRUE; }
-"false"				{ return FALSE; }
-"null"				{ return TNULL; }
-[ \t\r\n]+			{ }
-\"([^\"]*)\"		{ return STRING; }
+"{"		    { return LCURL; }
+"}"		    { return RCURL; }
+"["		    { return LSQUARE; }
+"]"		    { return RSQUARE; }
+","		    { return COMMA; }
+":"		    { return COLON; }
+"true"		    { return TRUE; }
+"false"		    { return FALSE; }
+"null"		    { return TNULL; }
+[ \t\r\n]+	    { }
+\"([^\"]*)\"	    { return STRING; }
 ^\[0-9]+\.?\[0-9]*  { return DECIMAL; }
-.					{ return ERROR; }
+.		    { return ERROR; }
 %%
 
 int yywrap()
