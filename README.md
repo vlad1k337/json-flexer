@@ -2,6 +2,8 @@
 Simple json lexer writed using [Flex](https://github.com/westes/flex) and C. 
 Will (hopefully) be supplemented with proper syntactical analyzer soon. 
 
+**VLAD1K YET HAS NO IDEA HOW TO USE THIS SHIT FURTHER WITH A SYNTACTIAL ANALYZER.<br>DON'T BLAME IF THIS CODE MAKES NO SENSE AND ETC.**
+
 ## Installation
 
 ``` Shell
